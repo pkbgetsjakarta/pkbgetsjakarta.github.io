@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jadwal ibadah, pelayan, dan pengurus Pelayanan Kategorial Persekutuan Kaum Bapak (PKB) GPIB Jemaat Getsemani DKI Jakarta." />
+    <meta name="theme-color" content="#2a1e14" />
+    <title>Jadwal Ibadah PKB GPIB Jemaat Getsemani DKI Jakarta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER: Logo sejajar dengan teks -->
+      <header class="fade-in">
+        <div class="logo-container">
+          <img src="images/gpiblogo.png" alt="Logo GPIB" class="logo" />
+          <img src="images/pkb-logo.png" alt="Logo PKB" class="logo" />
+          <img src="images/getslogo.png" alt="Logo Getsemani" class="logo" />
+        </div>
+        <div class="header-text">
+          <h1>GPIB JEMAAT GETSEMANI DKI JAKARTA</h1>
+          <h2>PELAYANAN KATEGORIAL PERSEKUTUAN KAUM BAPAK ( PELKAT PKB )</h2>
+        </div>
+      </header>
+
+      <main>
+        <!-- Konten lainnya tetap sama -->
+        <section class="card info-card fade-in">
+          <h3>IBADAH PELKAT PKB</h3>
+          <ul>
+            <li><span>HARI / TANGGAL</span> <strong>Jumat, 6 Novembber 2026</strong></li>
+            <li><span>PUKUL</span> <strong>20:00 WIB</strong></li>
+            <li><span>TUAN RUMAH</span> <strong>Bp. Theo Aditya</strong></li>
+            <li><span>SEKTOR</span> <strong>I</strong></li>
+            <li><span>TEMPAT</span> <strong>Gereja OEL</strong></li>
+          </ul>
+        </section>
+
+        <!-- Countdown card -->
+        <section class="card countdown-card fade-in">
+          <h3>MENGHITUNG KE WAKTU IBADAH</h3>
+          <div id="countdown-timer">
+            <div class="time-box">
+              <span id="days">00</span>
+              <small>Hari</small>
+            </div>
+            <div class="time-box">
+              <span id="hours">00</span>
+              <small>Jam</small>
+            </div>
+            <div class="time-box">
+              <span id="minutes">00</span>
+              <small>Menit</small>
+            </div>
+            <div class="time-box">
+              <span id="seconds">00</span>
+              <small>Detik</small>
+            </div>
+          </div>
+          <div id="countdown-message" class="hidden"></div>
+        </section>
+
+        <!-- Pelayan Ibadah -->
+        <section class="card servant-card fade-in">
+          <h3><i class="fas fa-hands-praying"></i> PELAYAN IBADAH</h3>
+          <div class="servant-list">
+            <!-- Pelayan Firman -->
+            <div class="servant-item">
+              <div class="servant-icon">
+                <i class="fas fa-bible"></i>
+              </div>
+              <h4>PELAYAN FIRMAN</h4>
+              <p>Pnt. Judian. I. Kolloh</p>
+            </div>
+
+            <!-- Pelayan Liturgos -->
+            <div class="servant-item">
+              <div class="servant-icon">
+                <i class="fas fa-microphone-alt"></i>
+              </div>
+              <h4>PELAYAN LITURGI</h4>
+              <p>Bp. Andris Haris Husen</p>
+            </div>
+
+            <!-- Pelayan Kolektan (dengan 2 orang) -->
+            <div class="servant-item">
+              <div class="servant-icon">
+                <i class="fas fa-hand-holding-heart"></i>
+              </div>
+              <h4>PELAYAN KOLEKTAN</h4>
+              <p>Bp. Pieter Aipassa</p>
+              <p>Bp. Mezack Tahapary</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Menu Tambahan -->
+        <section class="card additional-menu fade-in">
+          <h3>PELKAT PKB GPIB JEMAAT GETSEMANI DKI JAKARTA</h3>
+          <div class="menu-grid">
+            <div class="menu-item" onclick="togglePengurus()">
+              <i class="fas fa-users"></i>
+              <span>PENGURUS PELKAT PKB PERIODE 2025 - 2027</span>
+              <small>Klik Untuk Melihat</small>
+            </div>
+            <a href="images/pkb-jdwl.png" target="_blank" class="menu-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span>JADWAL IBADAH PELKAT PKB TAHUN 2026</span>
+              <small>Klik Untuk Melihat</small>
+            </a>
+            <a href="images/pkb-pl-fix.png" target="_blank" class="menu-item">
+              <i class="fas fa-chalkboard-user"></i>
+              <span>JADWAL PELAYAN LITURGI &amp; KOLEKTAN IBADAH PKB TAHUN 2026</span>
+              <small>Klik Untuk Melihat</small>
+            </a>
+          </div>
+        </section>
+
+        <!-- Daftar Pengurus -->
+        <section class="card pengurus-card hidden fade-in" aria-hidden="true">
+          <h3>PENGURUS PELKAT PKB PERIODE 2025 - 2027</h3>
+          <div class="pengurus-grid">
+            <div class="pengurus-item">
+              <h4>Ketua</h4>
+              <p>Indra Prasetyo</p>
+            </div>
+            <div class="pengurus-item">
+              <h4>Sekretaris</h4>
+              <p>Andris Haris Husen</p>
+            </div>
+            <div class="pengurus-item">
+              <h4>Bendahara</h4>
+              <p>Ferry Pangemanan</p>
+            </div>
+            <div class="pengurus-item">
+              <h4>Bidang Imaji</h4>
+              <p>Petrus Mesak Siahaya</p>
+            </div>
+            <div class="pengurus-item">
+              <h4>Bidang PPSDI-PPK</h4>
+              <p>Petrus Mesak Siahaya</p>
+            </div>
+            <div class="pengurus-item">
+              <h4>Bidang Germasa-LH</h4>
+              <p>Julianus Mezack Tahapary</p>
+            </div>
+            <div class="pengurus-item">
+              <h4>Bidang Inforkom-Litbang</h4>
+              <p>Jemmy Dwiyanto</p>
+            </div>
+            <div class="pengurus-item">
+              <h4>Bidang Pelkes</h4>
+              <p>Jemmy Dwiyanto</p>
+            </div>
+            <div class="pengurus-item">
+              <h4>Koordinator Sektor I, II, III</h4>
+              <p>Octovianus Pieter Aipassa</p>
+            </div>
+            <div class="pengurus-item">
+              <h4>Koordinator Sektor IV, V, VI</h4>
+              <p>Jemmy Dwiyanto</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Undangan -->
+        <section class="invitation fade-in">
+          <p><strong>✨ Bersekutu, Bertumbuh, dan Diberkati Bersama ✨</strong></p>
+          <p>Kehadiran Bapak-Bapak Sangat Kami Nantikan</p>
+          <h4>Tuhan Yesus Kristus Memberkati</h4>
+        </section>
+      </main>
+
+      <!-- DAFTAR HADIR -->
+      <section class="card attendance-card fade-in">
+        <h3>DAFTAR HADIR IBADAH PKB</h3>
+        <form id="attendance-form" name="Daftar-Hadir-Ibadah-PKB">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required />
+          </div>
+
+          <div class="form-group">
+            <label for="sektor">Sektor</label>
+            <input type="text" id="sektor" name="sektor" placeholder="Masukkan sektor" required />
+          </div>
+
+          <div class="form-group">
+            <label for="keterangan">Keterangan <small>(Opsional)</small></label>
+            <textarea id="keterangan" name="keterangan" rows="4" placeholder="Tulis keterangan atau pesan tambahan di sini..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn ripple-btn">Kirim Kehadiran</button>
+        </form>
+        <p id="attendance-message" class="hidden">Terima kasih, kehadiran Anda telah tercatat!</p>
+      </section>
+
+      <!-- Footer -->
+      <footer class="fade-in">
+        <div class="footer-content">
+          <h3>"PKB...MAJU TERUS, PELAYANAN...TANGGUH DAN LUWES!"</h3>
+          <div class="social-media">
+            <a href="https://www.instagram.com/pkbgpibgetsjakarta/" target="_blank" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCTqbphDbvJems6aZeUbi78g" target="_blank" class="social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <p>Persekutuan Kaum Bapak GPIB Jemaat Getsemani DKI Jakarta © TheGets 2026</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
